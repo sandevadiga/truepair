@@ -1,0 +1,144 @@
+.header {
+  background-color: #FFFFFF; /* Pink */
+  padding:  0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+.logo {
+  font-family: 'Truepair', cursive;
+  display: flex;
+  align-items: center;
+  margin:0 60px 0 30px;
+}
+
+
+.logoText {
+  font-size: 24px;
+  color: #EB455F; /* Romantic color */
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: #2B3467;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navLinks {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+}
+
+.navLink {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #2B3467; 
+  text-decoration: none;
+  
+}
+.navLinks li {
+list-style-type: none;
+margin: 10px;
+padding: 10px;
+/* border: 1px solid #ccc; */
+width: 100%;
+text-align: center;
+border-radius: 40px;
+/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+transition: transform 0.2s, box-shadow 0.2s;
+cursor: pointer;
+}
+
+.navLinks li:hover {
+  transform: translateY(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks a{
+  text-decoration: none;
+}
+
+/* .activeNavLink {
+  font-weight: bold;
+  background-color: aqua;
+  color: aquamarine;
+} */
+/* 
+.registerButton {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #9A208C;
+  border: none;
+  border-radius: 20px;
+  color: #FCFFE7;
+  cursor: pointer;
+  margin-right: 20px;
+} */
+
+.registerButton {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #9A208C;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas: "logo reg menu "
+                          " em em  navlink";
+    align-items: center;
+  }
+
+  .registerButton{
+    justify-self: flex-end;
+  }
+  .menuButton {
+    display: block;
+    /* justify-self: end; */
+    grid-area: menu;
+    margin-left: 10px;
+  }
+
+  .navLinks {
+    display: none;
+    grid-column: 1 / span 1;
+    /* opacity: 0.9; */
+  }
+
+  .navLinks.open {
+    grid-area: navlink;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  /* CSS styles for smaller devices */
+  .registerButton{
+    display: none;
+  }
+}
