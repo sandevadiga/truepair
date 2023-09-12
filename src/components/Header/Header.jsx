@@ -22,7 +22,7 @@ const Header = () => {
       </button>
       <nav className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         <li>
-          <a href='/nav1'>some</a>
+          <a href='/nav1'>something</a> // tested some git
         </li>
         <li>
           <a href='/nav2'>some</a>
