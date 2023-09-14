@@ -22,10 +22,10 @@ const Header = () => {
       </button>
       <nav className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
         <li>
-          <a href='/nav1'>some</a> // here i didit updates another done
+          <a href='/nav1'>some</a>
         </li>
         <li>
-          <a href='/nav2'>some</a> // here also
+          <a href='/nav2'>some</a>
         </li>
         <li>
           <a href='/nav3'>some</a>
