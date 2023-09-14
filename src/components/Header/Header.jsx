@@ -25,7 +25,7 @@ const Header = () => {
           <a href='/nav1'>something</a> // tested some git
         </li>
         <li>
-          <a href='/nav2'>some</a>
+          <a href='/nav2'>some</a> i do some changes here by dev1
         </li>
         <li>
           <a href='/nav3'>some</a>
